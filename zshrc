@@ -35,3 +35,5 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/local/sbin:~/bin:/Users/miguelperez/.rvm/gems/ruby-1.9.3-p286/bin:/Users/miguelperez/.rvm/gems/ruby-1.9.3-p286@global/bin:/Users/miguelperez/.rvm/rubies/ruby-1.9.3-p286/bin:/Users/miguelperez/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
