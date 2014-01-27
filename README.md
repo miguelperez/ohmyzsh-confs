@@ -7,5 +7,5 @@ shell script init_settings.sh
 
 This will symlink the files to the ohmyzsh configuration places.
 
-    ln -s chopi ~/.ohmyzsh/custom/plugins/chopi
+    ln -s chopi ~/.oh-my-zsh/custom/plugins/chopi
     ln -s .zshrc ~/.zshrc
