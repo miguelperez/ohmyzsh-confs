@@ -10,6 +10,7 @@ ZSH_THEME="gallois"
 # Example aliases
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
+alias foremandev="foreman start -f Procfile.dev"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
