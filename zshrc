@@ -1,15 +1,23 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
 
-# Path to your oh-my-zsh installation.
-export ZSH=/Users/miguelperez/.oh-my-zsh
-
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
 ZSH_THEME="amuse"
 
-# Uncomment the following line to use case-sensitive completion.
+# Example aliases
+alias zshconfig="subl ~/.zshrc"
+alias ohmyzsh="subl ~/.oh-my-zsh"
+alias foremandev="foreman start -f Procfile.dev"
+
+# open chrome from shell
+alias chrome="/Applications/Google\\ \\Chrome.app/Contents/MacOS/Google\\ \\Chrome"
+# open milestone pages of saasler products
+alias saasler_milestones="chrome --pinned-tab-count=11 https://github.com/koombea/saasler_platform_testing/milestones https://github.com/koombea/saasler_dev_portal/milestones https://github.com/koombea/saasler_external_authorization_client/milestones https://github.com/koombea/saasler-basic-api-mapper/milestones https://github.com/koombea/saasler_app_directory/milestones https://github.com/koombea/saasler-compose/milestones https://github.com/koombea/saasler_api_repository/milestones https://github.com/koombea/saasler_lib/milestones https://github.com/koombea/saasler_core/milestones https://github.com/koombea/saasler_demo/milestones https://github.com/koombea/saasler_api_client/milestones"
+
+# Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
@@ -50,36 +58,27 @@ ZSH_THEME="amuse"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git chopi)
+plugins=(git chopi powerline)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/gradle-1.10/bin
+PATH=$PATH:/Applications/apache-jmeter-2.11/bin
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export ANDROID_HOME=/Applications/Android\ Studio.app/sdk
+PATH=$ANDROID_HOME/tools:$PATH
+PATH=$ANDROID_HOME/platform-tools:$PATH
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+export NVM_DIR="/Users/miguelperez/.nvm"
+# This loads nvm
+alias loadnvm=". $NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] #&& . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+export GOPATH=$HOME/go_work
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
+source ~/.zshconfs
