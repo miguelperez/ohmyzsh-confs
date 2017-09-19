@@ -64,21 +64,12 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:$HOME/gradle-1.10/bin
-PATH=$PATH:/Applications/apache-jmeter-2.11/bin
-
-export ANDROID_HOME=/Applications/Android\ Studio.app/sdk
-PATH=$ANDROID_HOME/tools:$PATH
-PATH=$ANDROID_HOME/platform-tools:$PATH
-
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home
-
 export NVM_DIR="/Users/miguelperez/.nvm"
 # This loads nvm
 alias loadnvm=". $NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/nvm.sh" ] #&& . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-export GOPATH=$HOME/go_work
+eval "$(rbenv init -)"
 
 source ~/.zshconfs
+
