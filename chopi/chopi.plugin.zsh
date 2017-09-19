@@ -4,7 +4,7 @@ p() {
   PROJECT_NAME="$1";
   cd "$PROJECTS_DIR/$PROJECT_NAME";
 }
-
+# this is a comment.
 _projects_list() {
   reply=($(ls $PROJECTS_DIR))
 }

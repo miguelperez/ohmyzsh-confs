@@ -72,4 +72,3 @@ alias loadnvm=". $NVM_DIR/nvm.sh"
 eval "$(rbenv init -)"
 
 source ~/.zshconfs
-
