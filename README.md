@@ -16,5 +16,7 @@ This will symlink the files to the ohmyzsh configuration places.
     mkdir -p ~/.oh-my-zsh/custom/plugins/
     ln -s ~/ohmyzsh-confs/chopi .oh-my-zsh/custom/plugins/chopi
     ln -s ~/ohmyzsh-confs/zshrc ~/.zshrc
+    ln -s ~/ohmyzsh-confs/amuse-chopi.zsh-theme ~/.oh-my-zsh/themes/amuse-chopi.zsh-theme
     touch .zshconfs
     exit
+
